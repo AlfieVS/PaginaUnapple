@@ -1,0 +1,481 @@
+/*CSS*/
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0a4c91;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.4rem;
+    background-color: cornflowerblue;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-list-mobile{
+    display: none;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity .5s;
+}
+
+.nav-link:hover{
+    opacity: .7;
+}
+
+.nav-link-unag{
+    width: 4.4rem;
+    height: 4.4rem;
+    background: url("images/icons/LogoRotonda.png") center no-repeat;
+}
+
+.nav-link-search{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("images/icons/search.svg") center no-repeat;
+}
+
+/* .nav-link-bag{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("images/icons/bag.png") center no-repeat;
+}*/
+
+.unag{    
+    background: url("images/hero/Hero-Grupo-Medio.jpg") center no-repeat;
+    margin-top: 4.4rem;
+
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+    padding-top: 5.5rem;
+}
+
+.title-dark{
+    color: #1a3b70;
+    text-shadow: 2px 2px 2px #0c6387;
+}
+
+.title-heading{
+    font-size: 5.6rem;
+    line-height: 1.07143;
+    letter-spacing: -.005rem;
+}
+
+.title-sub-heading{
+    font-size: 2.65rem;
+    margin-top: .6rem;
+    letter-spacing: .008rem;
+    font-weight: 400;
+}
+
+.cta{
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.cta-link{
+    color: darkcyan;
+    font-size: 2.1rem;
+    display: inline-block;
+}
+
+.cta-link:nth-child(2){
+    margin-left: 2.6rem;
+}
+
+.cta-link:hover{
+    border-bottom: 2px solid #66bbff;
+}
+
+.licenciaturas{    
+    background: url("images/hero/hero-licenciaturas.jpg");
+}
+
+.posgrados{
+    background: url("images/hero/hero-posgrados.jpg");
+}
+
+.inicio-clases{
+    background: url("images/hero/hero-inscripciones.jpg");
+}
+
+.horarios{
+    background: url("images/hero/hero-ardilla.jpg");
+}
+
+.alianzas{
+    background: url("images/hero/hero-alianzas.jpg");
+}
+
+/*.backdrop-filter{
+   backdrop-filter: url(filters.svg#filter) blur(2rem);
+}*/
+
+
+
+.hero{
+    height: 73.6rem;
+    background-size: auto 73.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem solid #0a4c91;
+    border-bottom: .6rem solid #0a4c91;
+    background-size: 100% 100%;
+}
+
+.unag{
+    border-top: none;
+    background-size: 100% 100%;
+}
+
+.licenciaturas{
+    border-top: none;
+    background-size: 100% 100%;
+}
+
+.posgrados{
+    border-top: none;
+    background-size: 100% 100%;
+}
+
+.inicio-clases{
+    border-top: none;
+    background-size: 100% 100%;
+}
+
+.horarios{
+    border-top: none;
+    background-size: 100% 100%;
+}
+
+.alianzas{
+    border-top: none;
+    background-size: 100% 100%;
+}
+
+
+@media screen and (max-width: 1068px){
+    .unag{
+        background: url("images/hero/Hero-Grupo-Medio.jpg");
+        background-size: 100% 100%;
+    }
+    .licenciaturas{
+        background: url("images/hero/hero-licenciaturas.jpg");
+        background-size: 100% 100%;
+    }
+    .posgrados{
+        background: url("images/hero/hero-posgrados.jpg");
+        background-size: 100% 100%;
+    }
+    
+    .inicio-clases{
+        background: url("images/hero/hero-inscripciones.jpg");
+        background-size: 100% 100%;
+    }
+    
+    .horarios{
+        background: url("images/hero/hero-ardilla.jpg");
+        background-size: 100% 100%;
+    }
+    
+    .alianzas{
+        background: url("images/hero/hero-alianzas.jpg");
+        background-size: 100% 100%;
+    }
+    
+    .hero{
+        height: 65rem;
+        background-size: auto 69.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .title-heading{
+        font-size: 4.4rem;
+    }
+    
+    .title-sub-heading{
+        font-size: 2.4rem;
+    }
+    
+    cta-link:nth-child(2){
+        margin-left: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 735px){
+    header{
+        height: 4.8rem;
+        transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1), height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+    
+    header .container{
+        padding: -50vw;
+    }
+    
+    .unag{
+        margin-top: 4.8rem;        
+    }
+    
+    .nav-list-larger{ /*Este se borraba?*/
+        display: none;
+    }
+    
+    .nav-list{
+        margin-top: 0;
+    }
+    
+    .nav-list-mobile{
+        display: flex;
+    }
+    
+    .nav-item{
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-item-hidden{
+        display: none;
+    }
+    
+    .mobile-menu{
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .line{
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+    
+    .line-top{
+        margin-top: 3px;
+    }
+    
+    .line-bottom{
+        margin-top: -.4rem;
+    }
+    
+    .active .line-top{
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+    
+    .active .line-bottom{
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+    
+    header.active{
+        height: 100%;
+        background-color: #7d9ffd;
+    }
+        
+    .nav-link-unag{
+        transition: opacity 3s;
+        position: relative;
+        z-index: 1500;
+        
+    }
+    
+    .nav{
+        position: relative;
+    }
+    
+    .nav-link{
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+    
+    .nav-list-larger{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0; /*desactivar?*/
+        visibility: hidden;
+        transition: opacity .3s;
+    }
+    
+    .active .nav-list-larger{
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+        background-color: #7d9ffd; /*este se lo puse yo*/
+    }
+    
+    .nav-list-larger .nav-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255,255,255,1);
+    }
+    
+    .nav-list-larger .nav-item:nth-child(8){
+        border-bottom: none;
+    }
+    
+    .active .nav-list-larger{
+        animation: fadeIn 1s ease-in;
+    }
+    
+    .nav-link-unag{
+        width: 4.4rem;
+        height: 4.4rem;
+    }
+    
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeOut {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+    
+    nav-item: hover{
+        transform: scale(1.1); /*Este también yo*/
+    }
+}    
+
+@media screen and (max-width: 735px){
+    
+    .hero{
+        background-size: auto 54.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    
+    .unag{
+        height: 39rem;
+        background: url("images/hero/Hero-Grupo-Chico.jpg");
+        background-size: 100% 100%;
+    }
+    .licenciaturas{
+        height: 25rem;
+        background: url("images/hero/hero-licenciaturas-chico.jpg")center no-repeat; 
+        background-size: 100% 100%;
+    }
+    .posgrados{
+        height: 25rem;
+        background: url("images/hero/hero-posgrados-chico.jpg");
+        background-size: 100% 100%;
+    }
+    
+    .inicio-clases{
+        height: 25rem;
+        background: url("images/hero/hero-inscripciones-chico.jpg");
+        background-size: 100% 100%;   
+    }
+    
+    .horarios{
+        height: 25rem;
+        background: url("images/hero/hero-ardilla-chico.jpg");
+        background-size: 100% 100%;
+    }
+    
+    .alianzas{
+        height: 41rem;
+        background: url("images/hero/hero-alianzas-chico.jpg");
+        background-size: 100% 100%;
+    }
+    
+    
+    .title{
+        padding: 3.7rem;
+    }
+    
+    .title-heading{
+        font-size: 3.2rem;
+    }
+    
+    .title-sub-heading{
+        font-size: 1.9rem;
+    }
+    
+    .cta{
+        margin-top: .7rem;
+    }
+    
+    .cta-link{
+        font-size: 1.9rem;
+    }
+    
+    .nav-link-unag{
+           text-align: center;
+    }
+
+}
+    
