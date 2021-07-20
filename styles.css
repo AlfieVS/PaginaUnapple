@@ -27,7 +27,7 @@
    font-style: normal;
  }
 
-@media screen and (min-width: 1081px){
+@media screen and (min-width: 721px){
     html{
       font-size: 18px;  
     } 
@@ -35,6 +35,7 @@
     .nav-item{
         border-right: 3px solid #b3babd;
     }
+    
 }
 
 body{
@@ -118,7 +119,7 @@ header{
 .unag{    
     background: url("images/hero/version2/hero-HoyDecido.jpg") center no-repeat;
     margin-top: 4.4rem;
-
+    background-size: 100% 100%;    
 }
 
 .title{
@@ -190,13 +191,12 @@ header{
 
 
 .hero{
-    height: 73.6rem;
-    background-size: auto 73.6rem;
+    height: 44.6rem;
+    background-size: auto 44.6rem;
     background-position: center;
     background-repeat: no-repeat;
     /*border-top: .6rem solid #fff;
     border-bottom: .6rem solid #fff;*/
-    background-size: 100% 100%;
 }
 
 .unag{
@@ -206,24 +206,29 @@ header{
 
 .licenciaturas{
     border-top: none;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 .posgrados{
     border-top: none;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 .educacion-continua{
     border-top: none;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 .planteles{
     border-top: none;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
+/*.animacion1{
+    background-position: center;
+    height: cover;
+    width: cover;
+}*/
 
 @media screen and (max-width: 1080px){
     
@@ -260,8 +265,8 @@ header{
     }
     
     .hero{
-        height: 65rem;
-        background-size: auto 69.8rem;
+        height: 35rem;
+        background-size: auto 35rem;
         background-position: bottom center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
