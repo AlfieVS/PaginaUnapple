@@ -5,19 +5,56 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: bold;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat/Montserrat-SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Montserrat/Montserrat-SemiBold.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Montserrat/Montserrat-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Montserrat/Montserrat-SemiBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: normal;
+   font-style: normal;
+ }
+
+@media screen and (min-width: 1081px){
+    html{
+      font-size: 18px;  
+    } 
+    
+    .nav-item{
+        border-right: 3px solid #b3babd;
+    }
+}
 
 body{
-    background-color: #0a4c91;
+    background-color: #fff;
 }
 
 html{
-    font-size: 10px;
-    font-family: 'SF Pro Display', sans-serif;
+    font-size: 15px;
 }
 
 a{
     display: block;
     text-decoration: none;
+}
+
+h2{
+    font-family: 'Gotham';
+}
+h3{
+    font-family: 'Montserrat';
 }
 
 .container{
@@ -33,7 +70,7 @@ header{
     z-index: 1400;
     width: 100%;
     height: 4.4rem;
-    background-color: cornflowerblue;
+    background-color: #fff;
 }
 
 .nav-list{
@@ -50,7 +87,8 @@ header{
 
 .nav-link{
     font-size: 1.4rem;
-    color: #fff;
+    color: #1a3b70;
+    font-family: 'Gotham';
     padding: 0 1rem;
     transition: opacity .5s;
 }
@@ -62,7 +100,7 @@ header{
 .nav-link-unag{
     width: 4.4rem;
     height: 4.4rem;
-    background: url("images/icons/LogoRotonda.png") center no-repeat;
+    background: url("images/icons/icono-rotonda-blanco.png") center no-repeat;
 }
 
 .nav-link-search{
@@ -78,26 +116,27 @@ header{
 }*/
 
 .unag{    
-    background: url("images/hero/Hero-Grupo-Medio.jpg") center no-repeat;
+    background: url("images/hero/version2/hero-HoyDecido.jpg") center no-repeat;
     margin-top: 4.4rem;
 
 }
 
 .title{
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding-top: 5.5rem;
 }
 
 .title-dark{
     color: #1a3b70;
-    text-shadow: 2px 2px 2px #0c6387;
+    text-shadow: 3px 3px 2px #fff;
 }
 
 .title-heading{
     font-size: 5.6rem;
     line-height: 1.07143;
     letter-spacing: -.005rem;
+    margin-left: -5rem
 }
 
 .title-sub-heading{
@@ -105,11 +144,13 @@ header{
     margin-top: .6rem;
     letter-spacing: .008rem;
     font-weight: 400;
+    margin-left: -4.5rem;
 }
 
 .cta{
-    text-align: center;
+    text-align: left;
     margin-top: 1.8rem;
+    font-family: 'Montserrat';
 }
 
 .cta-link{
@@ -127,23 +168,19 @@ header{
 }
 
 .licenciaturas{    
-    background: url("images/hero/hero-licenciaturas.jpg");
+    background: url("images/hero/version2/hero-licenciaturas.jpg");
 }
 
 .posgrados{
-    background: url("images/hero/hero-posgrados.jpg");
+    background: url("images/hero/version2/hero-MaestriasyDoctorados.jpg");
 }
 
-.inicio-clases{
-    background: url("images/hero/hero-inscripciones.jpg");
+.educacion-continua{
+    background: url("images/hero/version2/hero-EducacionContinua.jpg");
 }
 
-.horarios{
-    background: url("images/hero/hero-ardilla.jpg");
-}
-
-.alianzas{
-    background: url("images/hero/hero-alianzas.jpg");
+.planteles{
+    background: url("images/hero/version2/hero-planteles.jpg");
 }
 
 /*.backdrop-filter{
@@ -157,8 +194,8 @@ header{
     background-size: auto 73.6rem;
     background-position: center;
     background-repeat: no-repeat;
-    border-top: .6rem solid #0a4c91;
-    border-bottom: .6rem solid #0a4c91;
+    /*border-top: .6rem solid #fff;
+    border-bottom: .6rem solid #fff;*/
     background-size: 100% 100%;
 }
 
@@ -177,48 +214,48 @@ header{
     background-size: 100% 100%;
 }
 
-.inicio-clases{
+.educacion-continua{
     border-top: none;
     background-size: 100% 100%;
 }
 
-.horarios{
-    border-top: none;
-    background-size: 100% 100%;
-}
-
-.alianzas{
+.planteles{
     border-top: none;
     background-size: 100% 100%;
 }
 
 
-@media screen and (max-width: 1068px){
+@media screen and (max-width: 1080px){
+    
+    html{
+        font-size: 13px;
+    }
+    
     .unag{
-        background: url("images/hero/Hero-Grupo-Medio.jpg");
+        background: url("images/hero/version2/hero-HoyDecido-medio.jpg");
         background-size: 100% 100%;
     }
     .licenciaturas{
-        background: url("images/hero/hero-licenciaturas.jpg");
+        background: url("images/hero/version2/hero-licenciaturas-medio.jpg");
         background-size: 100% 100%;
     }
     .posgrados{
-        background: url("images/hero/hero-posgrados.jpg");
+        background: url("images/hero/version2/hero-MaestriasyDoctorados-medio.jpg");
         background-size: 100% 100%;
     }
     
-    .inicio-clases{
+    /*.inicio-clases{
         background: url("images/hero/hero-inscripciones.jpg");
         background-size: 100% 100%;
-    }
+    }*/
     
-    .horarios{
-        background: url("images/hero/hero-ardilla.jpg");
+    .educacion-continua{
+        background: url("images/hero/version2/hero-EducacionContinua-medio.jpg");
         background-size: 100% 100%;
     }
     
-    .alianzas{
-        background: url("images/hero/hero-alianzas.jpg");
+    .planteles{
+        background: url("images/hero/version2/hero-planteles-medio.jpg");
         background-size: 100% 100%;
     }
     
@@ -244,7 +281,12 @@ header{
     
 }
 
-@media screen and (max-width: 735px){
+@media screen and (max-width: 720px){
+   
+    html{
+        font-size: 9px;
+    }
+    
     header{
         height: 4.8rem;
         transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1), height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
@@ -297,7 +339,7 @@ header{
         position: absolute;
         width: 1.7rem;
         height: 1px;
-        background-color: #fff;
+        background-color: #1a3b70;
         transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     }
     
@@ -323,7 +365,7 @@ header{
     
     header.active{
         height: 100%;
-        background-color: #7d9ffd;
+        background-color: #fff;
     }
         
     .nav-link-unag{
@@ -341,6 +383,8 @@ header{
         font-size: 1.7rem;
         padding: 0;
         margin: auto 0;
+        color: #1a3b70;
+        font-family: 'Gotham';
     }
     
     .nav-list-larger{
@@ -363,13 +407,13 @@ header{
         height: 100vh;
         opacity: 1;
         visibility: visible;
-        background-color: #7d9ffd; /*este se lo puse yo*/
+        background-color: #fff; /*este se lo puse yo*/
     }
     
     .nav-list-larger .nav-item{
         width: 100%;
         justify-content: flex-start;
-        border-bottom: 2px solid rgba(255,255,255,1);
+        border-bottom: 3px solid #b3babd;
     }
     
     .nav-list-larger .nav-item:nth-child(8){
@@ -408,7 +452,7 @@ header{
     }
 }    
 
-@media screen and (max-width: 735px){
+@media screen and (max-width: 720px){
     
     .hero{
         background-size: auto 54.8rem;
@@ -420,38 +464,41 @@ header{
     
     .unag{
         height: 39rem;
-        background: url("images/hero/Hero-Grupo-Chico.jpg");
+        background: url("images/hero/version2/hero-HoyDecido-chico.jpg");
         background-size: 100% 100%;
+        height: 34.4rem;
     }
     .licenciaturas{
         height: 25rem;
-        background: url("images/hero/hero-licenciaturas-chico.jpg")center no-repeat; 
+        background: url("images/hero/version2/hero-licenciaturas-chico.jpg")center no-repeat; 
         background-size: 100% 100%;
+        height: 34.4rem;
     }
     .posgrados{
         height: 25rem;
-        background: url("images/hero/hero-posgrados-chico.jpg");
+        background: url("images/hero/version2/hero-MaestriasyDoctorados-chico.jpg");
         background-size: 100% 100%;
+        height: 34.4rem;
     }
     
-    .inicio-clases{
+    /*.inicio-clases{
         height: 25rem;
         background: url("images/hero/hero-inscripciones-chico.jpg");
-        background-size: 100% 100%;   
+        background-size: 100% 100%;   */
     }
     
-    .horarios{
-        height: 25rem;
-        background: url("images/hero/hero-ardilla-chico.jpg");
+    .educacion-continua{
+        background: url("images/hero/version2/hero-EducacionContinua-chico.jpg");
         background-size: 100% 100%;
+        height: 34.4rem;
     }
     
-    .alianzas{
-        height: 41rem;
-        background: url("images/hero/hero-alianzas-chico.jpg");
+    .planteles{
+        background: url("images/hero/version2/hero-planteles-chico.jpg");
         background-size: 100% 100%;
+        height: 34.4rem;
     }
-    
+
     
     .title{
         padding: 3.7rem;
